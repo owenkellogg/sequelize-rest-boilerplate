@@ -9,7 +9,7 @@
     var SQLRest = require('sequelize-rest-boilerplate');
     var Payment = require('./sequelize_payment_model');
 
-    var router = new SQLRest(Payment, 'payment', payments');
+    var router = new SQLRest(Payment, 'payment');
     app.use('/payments', router); 
 
     app.listen(process.env.PORT);
